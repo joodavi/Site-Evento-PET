@@ -1,0 +1,379 @@
+@import './reset.scss';
+
+body {
+  font-family: 'Roboto';
+}
+
+.header {
+  background: $light-blue;
+  color: $gray2;
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  justify-content: space-around;
+  width: 100%;
+  &__icons {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+    img {
+      height: 50px;
+      width: 50px;
+    }
+    h1 {
+      display: flex;
+      flex-direction: column;
+      font-size: 24px;
+      font-weight: 300;
+      span {
+        font-size: 14px;
+        margin-top: -2px;
+      }
+    }
+  }
+
+  &__nav {
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    .nav-list {
+      display: flex;
+      list-style: none;
+    }
+    .nav-item {
+      cursor: pointer;
+      padding: 14px;
+      &:hover {
+        background: $dark-blue;
+        color: $white;
+        transition: .2s;
+      }
+    }
+  }
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  img {
+    height: 900px;
+    width: 100%;
+  }
+  h1 {
+    right: 0;
+  }
+}
+
+.about {
+  padding: 20px;
+  h3 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.schedule {
+  background: $light-blue;
+  height: 450px;
+  padding: 30px;
+  h3 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+  }
+  &__days {
+    .days {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding-top: 30px;
+      &__item {
+        background: $white;
+        color: $gray2;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80px;
+        margin: 16px;
+        padding: 12px;
+        text-align: center;
+        width: 80px;
+        // js eu acho
+        &:after, &:hover {
+          background: $dark-blue;
+          box-shadow: 0px 0px 20px 5px #1184b6a6;
+          color: $white;
+          transition: .3s;
+        }
+      }
+    }
+  }
+  .events {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    padding: 20px;
+    &__details {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      h4 {
+        align-items: center;
+        color: $dark-blue;
+        display: flex;
+        font-weight: 300;
+        padding: 0 20px;
+      }
+      .box-details {
+        align-items: center;
+        border: 5px solid $dark-blue;
+        background: #fafafad0;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100px;
+        width: 100px;
+        transition: .3s;
+        .details {
+          color: $white;
+          font-size: 16px;
+          font-weight: 300;
+          letter-spacing: 1px;
+          margin-top: 150px;
+          position: absolute;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+.submition {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  h3 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .text {
+    text-align: center;
+    padding: 20px;
+  }
+  .date {
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+  }
+  input {
+    margin: auto;
+    margin-top: 10px;
+  }
+  .button-submition {
+    background: $dark-blue;
+    border: none;
+    border-radius: 2px;
+    color: $white;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-weight: 500;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-decoration: none;
+    outline: none;
+    width: 80px;
+    &:hover {
+      opacity: .9;
+    }
+  }
+}
+
+.form {
+  background: $light-blue;
+  padding: 30px;
+  h3 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .subscription {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 100%;
+    .input-block {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      width: 50%;
+      input {
+        background: $white;
+        border: 2px solid $dark-blue;
+        border-radius: 10px;
+        height: 40px;
+        outline: none;
+        padding: 4px;
+      }
+      .input-file {
+        border: 2px solid $dark-blue;
+      }
+      .checkboxes {
+        background: $white;
+        border: 2px solid $dark-blue;
+        border-radius: 10px;
+        padding: 8px;
+      }
+      .disponibility {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        label {
+          margin-left: 5px;
+        }
+      }
+      .atividade {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        label {
+          margin-left: 5px;
+        }
+      }
+      .aditional-text {
+        font-size: 14px;
+      }
+    }
+  }
+  .submit {
+    background: $dark-blue;
+    border: none;
+    border-radius: 2px;
+    color: $white;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-weight: 500;
+    height: 40px;
+    margin: 0 auto;
+    text-decoration: none;
+    outline: none;
+    width: 80px;
+    &:hover {
+      opacity: .9;
+    }
+  }
+}
+
+.contact {
+  padding: 30px;
+  h3 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .contacts {
+    padding: 20px;
+    &__details {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      list-style: none;
+      .details {
+        color: $white;
+        margin: 20px;
+        text-align: center;
+        width: 120px;
+        .photo {
+          border-radius: 50%;
+          height: 100px;
+          width: 100px;
+        }
+        .socials {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          padding: 10px;
+          .button-social {
+            cursor: pointer;
+            margin: 4px;
+            width: 20px;
+            &:hover {
+              opacity: .7;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.faq {
+  background: $light-blue;
+  padding: 30px;
+  h3 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .questions {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+    &__item {
+      padding: 8px;
+      .question {
+        font-size: 20px;
+        font-weight: 900;
+      }
+      .answer {
+        font-size: 16px;
+        font-weight: 300;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.footer {
+  background: $dark-blue;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+  a {
+    color: $white;
+    font-size: 16px;
+    padding: 10px;
+  }
+  .socials-pet {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    .button-social-pet {
+      margin: 4px;
+      width: 20px;
+    }
+  }
+}
+
+.line {
+  background: $dark-blue;
+  display: flex;
+  height: 5px;
+  margin: 0 auto;
+  width: 100px;
+}
