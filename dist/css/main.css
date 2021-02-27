@@ -710,13 +710,13 @@ body .fade {
     height: 80px;
     width: 80px;
   }
-  .submition {
+  .submit {
     height: auto;
   }
-  .submition input {
+  .submit input {
     margin-bottom: 10px;
   }
-  .submition .button-submition {
+  .submit .button-submit {
     height: 30px;
     margin: auto;
     padding: 0;
@@ -765,7 +765,7 @@ body .fade {
   .form .checkboxes p {
     letter-spacing: -0.5px;
   }
-  .form .submit {
+  .form .to-submit {
     margin-bottom: 30px;
   }
 }
