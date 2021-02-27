@@ -356,6 +356,7 @@ body {
   height: 40px;
   outline: none;
   padding: 4px;
+  width: 263px;
 }
 
 .form .subscription .input-block .input-file {
