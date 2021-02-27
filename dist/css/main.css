@@ -356,7 +356,6 @@ body {
   height: 40px;
   outline: none;
   padding: 4px;
-  width: 263px;
 }
 
 .form .subscription .input-block .input-file {
@@ -673,13 +672,16 @@ body {
     padding: 0;
   }
   .form input {
-    width: 250px;
+    width: 265px;
   }
   .form .checkboxes {
     padding: 0;
   }
   .form .checkboxes input {
-    width: 40px;
+    width: 16px;
+  }
+  .form .checkboxes p {
+    letter-spacing: -0.5px;
   }
   .form .submit {
     margin-bottom: 30px;

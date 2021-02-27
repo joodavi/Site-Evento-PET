@@ -233,7 +233,6 @@ body {
         height: 40px;
         outline: none;
         padding: 4px;
-        width: 263px;
       }
       .input-file {
         border: 2px solid $dark-blue;
@@ -467,12 +466,15 @@ body {
       padding: 0;
     }
     input {
-      width: 250px;
+      width: 265px;
     }
     .checkboxes {
       padding: 0;
       input {
-        width: 40px;
+        width: 16px;
+      }
+      p {
+        letter-spacing: -0.5px;
       }
     }
   .submit {
