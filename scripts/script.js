@@ -23,3 +23,11 @@ buttonDay3.addEventListener('click', () => {
   divDay2.style.display = "none";
   divDay3.style.display = "flex";
 })
+
+function openMenu() {
+  document.getElementById("nav-bar").style.height = "100%";
+}
+
+function closeMenu() {
+  document.getElementById("nav-bar").style.height = "0";
+} 

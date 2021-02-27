@@ -25,6 +25,10 @@ body {
   width: 100%;
 }
 
+.header img {
+  display: none;
+}
+
 .header__icons {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -38,6 +42,7 @@ body {
 }
 
 .header__icons img {
+  display: block;
   height: 50px;
   width: 50px;
 }
@@ -105,6 +110,17 @@ body {
 }
 
 .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 320px;
   padding: 20px;
 }
 
@@ -248,6 +264,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 320px;
   padding: 30px;
 }
 
@@ -269,7 +289,7 @@ body {
 }
 
 .submition input {
-  margin: auto;
+  margin: 0 auto;
   margin-top: 10px;
 }
 
@@ -326,7 +346,7 @@ body {
           flex-direction: column;
   margin: 0 auto;
   margin-bottom: 20px;
-  width: 50%;
+  width: 70%;
 }
 
 .form .subscription .input-block input {
@@ -552,5 +572,116 @@ body {
   height: 5px;
   margin: 0 auto;
   width: 100px;
+}
+
+@media (max-width: 800px) {
+  .header img {
+    display: block;
+  }
+  .header .menu {
+    display: block;
+    width: 30px;
+  }
+  .header__nav {
+    background: #2d9cdb;
+    color: #fff;
+    height: 0%;
+    left: 0;
+    overflow-y: hidden;
+    position: fixed;
+    -webkit-transition: .4s;
+    transition: .4s;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .header__nav .close-button {
+    position: absolute;
+    top: 40px;
+    right: 43px;
+  }
+  .header__nav .nav-list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    position: relative;
+    text-align: center;
+  }
+  .about {
+    height: auto;
+  }
+  .schedule .events {
+    padding: 10px;
+  }
+  .schedule .events .box-details {
+    height: 80px;
+    width: 80px;
+  }
+  .submition {
+    height: auto;
+  }
+  .submition input {
+    margin-bottom: 10px;
+  }
+  .submition .button-submition {
+    height: 30px;
+    margin: auto;
+    padding: 0;
+  }
+  .contact .contacts__details {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .form h3 {
+    padding: 30px;
+    padding-bottom: 5px;
+  }
+  .form .subscription {
+    padding: 0;
+  }
+  .form input {
+    width: 250px;
+  }
+  .form .checkboxes {
+    padding: 0;
+  }
+  .form .checkboxes input {
+    width: 40px;
+  }
+  .form .submit {
+    margin-bottom: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

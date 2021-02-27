@@ -14,12 +14,13 @@
   <title>Seletivo 2021.1</title>
 </head>
 <body>
-  <header class="header">
+  <header id="header" class="header">
     <div class="header__icons">
-      <img src="/assets/images/pet-icon.png" alt="PETComp brand">
+      <img src="/assets/images/pet-icon.png" alt="PETComp brand" >
       <h1>Seletivo <br> <span>2021.2</span></h1>
     </div>
-    <nav class="header__nav">
+    <nav id="nav-bar" class="header__nav">
+      <img src="./assets/svg/close-24px.svg"  onclick="closeMenu()" alt="" class="close-button">
       <ul class="nav-list">
         <li class="nav-item">Sobre</li>
         <li class="nav-item">Cronograma</li>
@@ -29,6 +30,7 @@
         <li class="nav-item">FAQ</li>
       </ul>
     </nav>
+    <img src="./assets/svg/menu-24px.svg" alt="" onclick="openMenu()" class="menu">
   </header>
   <section class="slider">
     <img src="./assets/images/example.jfif" alt="">
@@ -72,7 +74,7 @@
             Entrevista <br> 10h - 12h
           </div>
         </li>
-        <h4>- - - -  Pausa  - - - -</h2>
+        <h4>- - Pausa - -</h2>
         <li class="box-details">
           <img src="./assets/svg/mic-24px.svg" alt="">
           <div class="details">
@@ -87,7 +89,7 @@
             Atividade Prática <br> 08h30 - 11h30
           </div>
         </li>
-        <h4>- - - -  Pausa  - - - -</h2>
+        <h4>- - Pausa - - </h2>
         <li class="box-details">
           <img src="./assets/svg/code-24px.svg" alt="">
           <div class="details">
@@ -102,7 +104,7 @@
             Atividade Prática <br> 08h30 - 11h30
           </div>
         </li>
-        <h4>- - - -  Pausa  - - - -</h2>
+        <h4>- - Pausa - -</h2>
         <li class="box-details">
           <img src="./assets/svg/slideshow-24px.svg" alt="">
           <div class="details">
