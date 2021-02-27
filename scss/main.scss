@@ -2,6 +2,23 @@
 
 body {
   font-family: 'Roboto';
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 }
 
 .header {
@@ -46,6 +63,10 @@ body {
     .nav-item {
       cursor: pointer;
       padding: 14px;
+      a {
+        color: $white;
+        text-decoration: none;
+      }
       &:hover {
         background: $dark-blue;
         color: $white;
@@ -56,15 +77,46 @@ body {
 }
 
 .slider {
-  position: relative;
-  display: flex;
-  img {
-    height: 900px;
-    width: 100%;
-  }
-  h1 {
-    right: 0;
-  }
+  margin: auto;
+  width: 100%;
+  .slider-content {
+    list-style: none;
+    margin: auto;
+    position: relative;
+    .preview, .next {
+      align-items: center;
+      background: #cccccc6c;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      height: 60px;
+      outline: none;
+      padding: 8px;
+      position: absolute;
+      text-decoration: none;
+      top: 50%;
+      transition: .6s ease;
+      width: auto;
+      &:hover {
+        background: #ccccccdc;
+      }
+      img {
+        width: 30px;
+      }
+    }
+    .next {
+      right: 0;
+    }
+    .slider-item {
+      display: none;
+      img {
+        display: flex;
+        margin: auto;
+        height: 800px;
+        width: 100%;
+     }
+   }
+ }
 }
 
 .about {
@@ -113,7 +165,6 @@ body {
         padding: 12px;
         text-align: center;
         width: 80px;
-        // js eu acho
         &:after, &:hover {
           background: $dark-blue;
           box-shadow: 0px 0px 20px 5px #1184b6a6;
@@ -163,7 +214,7 @@ body {
     }
   }
 }
-.submition {
+.submit {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -187,7 +238,7 @@ body {
     margin: 0 auto;
     margin-top: 10px;
   }
-  .button-submition {
+  .button-submit {
     background: $dark-blue;
     border: none;
     border-radius: 2px;
@@ -264,7 +315,7 @@ body {
       }
     }
   }
-  .submit {
+  .to-submit {
     background: $dark-blue;
     border: none;
     border-radius: 2px;
@@ -298,8 +349,10 @@ body {
       justify-content: center;
       list-style: none;
       .details {
-        color: $white;
-        margin: 20px;
+        color: $light-blue;
+        font-size: 20px;
+        font-weight: 300;
+        margin: 20px 60px;
         text-align: center;
         width: 120px;
         .photo {
@@ -358,6 +411,7 @@ body {
   color: $white;
   display: flex;
   flex-direction: column;
+  font-family: 'Montserrat';
   text-align: center;
   padding: 30px;
   a {
@@ -371,9 +425,13 @@ body {
     flex-direction: row;
     justify-content: center;
     padding: 10px;
-    .button-social-pet {
-      margin: 4px;
-      width: 20px;
+    a {
+      border: none;
+      outline: none;
+      .button-social-pet {
+        margin: 4px;
+        width: 20px;
+      }
     }
   }
 }
@@ -418,6 +476,15 @@ body {
         margin: auto;
         position: relative;
         text-align: center;
+      }
+    }
+  }
+  .slider {
+    .slider-content {
+      .slider-item {
+        img {
+          height: 400px;
+        }
       }
     }
   }

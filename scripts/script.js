@@ -1,3 +1,5 @@
+// events
+
 var divDay1 = document.getElementById("day-1");
 var divDay2 = document.getElementById("day-2");
 var divDay3 = document.getElementById("day-3");
@@ -24,6 +26,8 @@ buttonDay3.addEventListener('click', () => {
   divDay3.style.display = "flex";
 })
 
+// navbar menu
+
 function openMenu() {
   document.getElementById("nav-bar").style.height = "100%";
 }
@@ -31,3 +35,28 @@ function openMenu() {
 function closeMenu() {
   document.getElementById("nav-bar").style.height = "0";
 } 
+
+// slider
+
+var sliderIndex = 1;
+showSlides(sliderIndex);
+
+function plusSlides(n) {
+  showSlides(sliderIndex+=n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slider-item");
+  if (n > slides.length) {
+    sliderIndex = 1;
+  }
+  if (n < 1) {
+    sliderIndex = slides.length;
+  }
+
+  for(i=0; i<slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[sliderIndex-1].style.display = "block";
+}
