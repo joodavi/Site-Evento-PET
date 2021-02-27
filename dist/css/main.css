@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto';
 }
@@ -34,9 +38,45 @@ body .fade {
   }
 }
 
+.sidenav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #050b3f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  top: 10%;
+  -webkit-transition: .4s;
+  transition: .4s;
+  right: -170px;
+  width: 160px;
+  z-index: 1;
+}
+
+.sidenav a {
+  color: #fafafa;
+  padding: 10px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.sidenav a:hover {
+  background: #fafafa;
+  color: #050b3f;
+}
+
 .header {
   background: #00b1fd96;
-  color: #333;
+  color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,7 +216,7 @@ body .fade {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  height: 800px;
+  height: 830px;
   width: 100%;
 }
 
@@ -191,8 +231,8 @@ body .fade {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 320px;
-  padding: 20px;
+  height: auto;
+  padding: 30px;
 }
 
 .about h3 {
@@ -201,11 +241,52 @@ body .fade {
   text-align: center;
 }
 
-.about p {
+.about__text {
   font-size: 20px;
   font-weight: 300;
   padding: 20px;
   text-align: center;
+}
+
+.about__details {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.about__details-item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 20px;
+}
+
+.about__details-item img {
+  width: 40px;
+}
+
+.about__details-item .item-information {
+  color: #000;
+  font-family: 'Montserrat';
+  font-size: 14px;
+}
+
+.about__details-item .item-name {
+  font-weight: 700;
 }
 
 .schedule {
@@ -252,7 +333,7 @@ body .fade {
   width: 80px;
 }
 
-.schedule__days .days__item:after, .schedule__days .days__item:hover {
+.schedule__days .days__item:hover {
   background: #050b3f;
   -webkit-box-shadow: 0px 0px 20px 5px #1184b6a6;
           box-shadow: 0px 0px 20px 5px #1184b6a6;
@@ -290,8 +371,10 @@ body .fade {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-weight: 300;
+  font-family: 'Montserrat';
+  font-weight: 700;
   padding: 0 20px;
+  text-transform: uppercase;
 }
 
 .schedule .events__details .box-details {
@@ -403,6 +486,7 @@ body .fade {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 20px;
   padding: 30px;
   width: 100%;
 }
@@ -418,6 +502,11 @@ body .fade {
   margin: 0 auto;
   margin-bottom: 20px;
   width: 70%;
+}
+
+.form .subscription .input-block label {
+  font-weight: 500;
+  margin-left: 4px;
 }
 
 .form .subscription .input-block input {
@@ -526,7 +615,7 @@ body .fade {
 }
 
 .contact .contacts__details .details {
-  color: #00b1fd96;
+  color: #050b3f;
   font-size: 20px;
   font-weight: 300;
   margin: 20px 60px;
@@ -535,6 +624,7 @@ body .fade {
 }
 
 .contact .contacts__details .details .photo {
+  border: 5px solid #050b3f;
   border-radius: 50%;
   height: 100px;
   width: 100px;
@@ -654,6 +744,9 @@ body .fade {
 }
 
 @media (max-width: 800px) {
+  .sidenav {
+    display: none;
+  }
   .header img {
     display: block;
   }
@@ -677,7 +770,7 @@ body .fade {
   .header__nav .close-button {
     position: absolute;
     top: 40px;
-    right: 43px;
+    right: 50px;
   }
   .header__nav .nav-list {
     -webkit-box-align: center;
@@ -702,6 +795,9 @@ body .fade {
   }
   .about {
     height: auto;
+  }
+  .about__details-item {
+    padding: 4px;
   }
   .schedule .events {
     padding: 10px;

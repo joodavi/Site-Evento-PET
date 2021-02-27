@@ -60,3 +60,17 @@ function showSlides(n) {
   }
   slides[sliderIndex-1].style.display = "block";
 }
+
+// sidenav
+window.onscroll = function() {
+  scroll();
+}
+
+function scroll() {
+  var sidenav = document.getElementById("sidenav");
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    sidenav.style.right = "0px";
+  } else {
+    sidenav.style.right = "-170px";
+  }
+}
