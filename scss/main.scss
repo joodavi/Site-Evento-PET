@@ -1,30 +1,5 @@
 @import './reset.scss';
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Roboto';
-
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-}
-
 .sidenav {
   align-items: center;
   background: $dark-blue;
@@ -39,7 +14,7 @@ body {
   right: -170px;
   width: 160px;
   z-index: 1;
-  a {
+  &__anchors {
     color: $white;
     padding: 10px;
     text-decoration: none;
@@ -60,6 +35,16 @@ body {
   justify-content: space-around;
   width: 100%;
   img { display: none }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 300;
+    span {
+      font-size: 14px;
+      margin-top: -2px;
+    }
+  }
   &__icons {
     align-items: center;
     display: flex;
@@ -70,18 +55,7 @@ body {
       height: 50px;
       width: 50px;
     }
-    h1 {
-      display: flex;
-      flex-direction: column;
-      font-size: 24px;
-      font-weight: 300;
-      span {
-        font-size: 14px;
-        margin-top: -2px;
-      }
-    }
   }
-
   &__nav {
     align-items: center;
     display: flex;
@@ -109,7 +83,7 @@ body {
 .slider {
   margin: auto;
   width: 100%;
-  .slider-content {
+  &__content {
     list-style: none;
     margin: auto;
     position: relative;
@@ -548,7 +522,7 @@ body {
     }
   }
   .slider {
-    .slider-content {
+    &__content {
       .slider-item {
         img {
           height: 400px;
