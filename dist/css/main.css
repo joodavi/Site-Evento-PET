@@ -421,8 +421,10 @@ body {
 }
 
 .submit .text {
-  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
   padding: 20px;
+  text-align: center;
 }
 
 .submit .date {
@@ -586,8 +588,10 @@ body {
 }
 
 .contact .text {
-  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
   padding: 20px;
+  text-align: center;
 }
 
 .contact .contacts {
