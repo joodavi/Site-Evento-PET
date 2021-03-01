@@ -74,14 +74,6 @@ body .fade {
   color: #050b3f;
 }
 
-.sidenav .progress-bar {
-  background: #fafafa;
-  height: 0%;
-  left: 10px;
-  position: absolute;
-  width: 8px;
-}
-
 .header {
   background: #00b1fd96;
   color: #000;
@@ -764,9 +756,6 @@ body .fade {
 
 @media (max-width: 800px) {
   .sidenav {
-    display: none;
-  }
-  .sidenav .progress-bar {
     display: none;
   }
   .header img {
