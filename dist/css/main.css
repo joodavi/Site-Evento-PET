@@ -815,7 +815,7 @@ body .fade {
   }
   .schedule .events__box-details {
     padding: 0;
-    width: 120px;
+    width: 100px;
   }
   .schedule .events__image {
     height: 75px;
@@ -823,7 +823,7 @@ body .fade {
   }
   .schedule .events__info {
     font-size: 12px;
-    width: 120px;
+    width: 160px;
   }
   .submit {
     height: auto;
