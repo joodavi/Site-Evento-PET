@@ -5,7 +5,7 @@
 ### Desenvolvido com HTML e SCSS, além de JavaScript para as seguintes seções: apresentação da navegação lateral, barra de navegação mobile, slider e botões do cronograma.
 
 #### Fontes: Montserrat/Roboto retiradas do GoogleFonts: https://fonts.google.com/
-#### Icones: Material Icons: https://material.io/resources/icons/
+#### Ícones: Material Icons: https://material.io/resources/icons/
 #### Imagens: Unsplash: https://unsplash.com/
 
 #### Conteúdo Site: 
