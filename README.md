@@ -1,4 +1,5 @@
 # Site-Evento-PETComp 
+##### Demo: https://site-evento-pet-joodavi.vercel.app/
 ## Tema: Seletivo PETComp
 
 ### Desenvolvido com HTML e SCSS, além de JavaScript para as seguintes seções: apresentação da navegação lateral, barra de navegação mobile, slider e botões do cronograma.
