@@ -64,6 +64,7 @@ function showSlides(n) {
 // sidenav
 window.onscroll = function() {
   scroll();
+  progressScroll();
 }
 
 function scroll() {
@@ -73,4 +74,12 @@ function scroll() {
   } else {
     sidenav.style.right = "-170px";
   }
+}
+
+function progressScroll() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight = document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 31.5;
+
+  document.getElementById("bar").style.height = scrolled + "%";
 }

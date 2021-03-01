@@ -33,6 +33,7 @@
     <a href="#faq">
       FAQ
     </a>
+    <div id="bar" class="progress-bar"></div>
   </div>
   <header id="header" class="header">
     <div class="header__icons">
@@ -158,51 +159,65 @@
         </ul>
       </div>
       <div class="events">
-        <ul id="day-1" class="events__details">
-          <li class="box-details" style="display: flex;">
-            <img src="./assets/svg/mic-24px.svg" alt="">
-            <div class="details">
-              Entrevistas <br> 10h - 12h
+        <div id="day-1" class="events__details" style="display: flex;">
+          <div class="events__box-details">
+            <div class="events__image">
+              <img src="./assets/svg/mic-24px.svg" alt="">
             </div>
-          </li>
-          <h4> - Pausa - </h2>
-          <li class="box-details">
-            <img src="./assets/svg/mic-24px.svg" alt="">
-            <div class="details">
-              Entrevistas <br> 14h - 16h
+            <div class="events__info">
+              Entrevistas <br> 10h00 - 12h00
             </div>
-          </li>
-        </ul>
-        <ul id="day-2" class="events__details" style="display: none;">
-          <li class="box-details">
-            <img src="./assets/svg/video_label-24px.svg" alt="">
-            <div class="details">
+          </div>
+          <h4> - PAUSA - </h4>
+          <div class="events__box-details">
+            <div class="events__image">
+              <img src="./assets/svg/mic-24px.svg" alt="">
+            </div>
+            <div class="events__info">
+              Entrevistas <br> 14h00 - 16h00
+            </div>
+          </div>
+        </div>
+
+        <div id="day-2" class="events__details" style="display: none;">
+          <div class="events__box-details">
+            <div class="events__image">
+              <img src="./assets/svg/video_label-24px.svg" alt="">
+            </div>
+            <div class="events__info">
               Atividades Práticas <br> 08h30 - 11h30
             </div>
-          </li>
-          <h4> - Pausa - </h2>
-          <li class="box-details">
-            <img src="./assets/svg/code-24px.svg" alt="">
-            <div class="details">
+          </div>
+          <h4> - PAUSA - </h4>
+          <div class="events__box-details">
+            <div class="events__image">
+              <img src="./assets/svg/code-24px.svg" alt="">
+            </div>
+            <div class="events__info">
               Desenvolvimento <br> 14h - 18h
             </div>
-          </li>
-        </ul>
-        <ul id="day-3" class="events__details" style="display: none;">
-          <li class="box-details">
-            <img src="./assets/svg/video_label-24px.svg" alt="">
-            <div class="details">
-              Atividade Prática <br> 08h30 - 11h30
+          </div>
+        </div>
+
+        <div id="day-3" class="events__details" style="display: none;">
+          <div class="events__box-details">
+            <div class="events__image">
+              <img src="./assets/svg/video_label-24px.svg" alt="">
             </div>
-          </li>
-          <h4> - Pausa - </h2>
-          <li class="box-details">
-            <img src="./assets/svg/slideshow-24px.svg" alt="">
-            <div class="details">
+            <div class="events__info">
+              Atividades Práticas <br> 08h30 - 11h30
+            </div>
+          </div>
+          <h4> - PAUSA - </h4>
+          <div class="events__box-details">
+            <div class="events__image">
+              <img src="./assets/svg/slideshow-24px.svg" alt="">
+            </div>
+            <div class="events__info">
               Apresentação <br> 14h - 18h
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
   </a>
@@ -375,9 +390,6 @@
         </ul>
     </section>
   </a>
-  <div class="maps">
-
-  </div>
 
   <footer class="footer">
     PETComp - UFMA 2021
